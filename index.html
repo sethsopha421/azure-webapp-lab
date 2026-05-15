@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Web App Lab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #0078d4;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .status {
+            color: green;
+            font-weight: bold;
+        }
+        button {
+            background-color: #0078d4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #005a9e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Welcome to Azure Web App!</h1>
+        <p>This web app is deployed from <strong>GitHub</strong> with continuous deployment.</p>
+        <p class="status">✅ Status: Successfully Deployed</p>
+        <p>Last updated: <span id="datetime"></span></p>
+        <button onclick="alert('Hello from Azure! 🎉')">Click Me!</button>
+    </div>
 
+    <script>
+        // Display current date and time
+        document.getElementById('datetime').innerHTML = new Date().toLocaleString();
+    </script>
+</body>
+</html>
